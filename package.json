@@ -1,0 +1,19 @@
+{
+  "name": "markdown-templator",
+  "version": "1.0.0",
+  "description": "Include markdown files in an HTML template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:grit96/markdown-templator.git"
+  },
+  "author": "Geraint White <geraintwhite@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grit96/markdown-templator/issues"
+  },
+  "homepage": "https://github.com/grit96/markdown-templator#readme"
+}
