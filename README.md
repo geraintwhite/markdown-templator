@@ -6,7 +6,21 @@ Include markdown files in an HTML template. [gulp-md-template](https://github.co
 $ npm install markdown-templator
 ```
 
+
+## Help
+
+```
+Usage: markdown-templator template.html [options]
+
+-h|--help      display this help message
+-v|--version   display the version number
+-o|--output    directory to output processed HTML
+-p|--path      location to look for markdown partials
+```
+
+
 ## Documentation
+
 ## `Templator(options)`
 Creates a new `Templator` instance.
 
