@@ -1,5 +1,5 @@
 # markdown-templator
-Include markdown files in an HTML template
+Include markdown files in an HTML template. [gulp-md-template](https://github.com/grit96/gulp-md-template) is a Gulp plugin for this with example usage.
 
 ## Installation
 ```sh
