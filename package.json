@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/grit96/markdown-templator#readme",
   "dependencies": {
-    "marked": "^0.3.3",
+    "markdown-it": "^4.2.2",
     "minimist": "^1.1.1",
     "ul": "^5.0.0"
   },

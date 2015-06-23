@@ -1,7 +1,7 @@
 var fs = require('fs'),
     path = require('path'),
     ul = require('ul'),
-    marked = require('marked');
+    md = require('markdown-it')({ html: true });
 
 
 /**
@@ -56,7 +56,7 @@ Templator.prototype.processContent = function (templateContent) {
   return templateContent.replace(/{{(.+)}}/g, function (match, name) {
     var filepath = path.join(this.cwd, name + (/\.md$/.test(name) ? '' : '.md'));
     return fs.existsSync(filepath)
-      ? marked(fs.readFileSync(filepath).toString())
+      ? md.render(fs.readFileSync(filepath).toString())
       : match;
   }.bind(this));
 };
