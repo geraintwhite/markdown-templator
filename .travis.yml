@@ -8,3 +8,12 @@ node_js:
 script:
   - npm install
   - npm test
+
+deploy:
+  provider: npm
+  email: mail@geraintwhite.co.uk
+  api_key:
+    secure: KnqFZcSjSVWw7liTH75CgWet5KMYTEBA4mNevZJoaEL84rvhDLSRW1MB9lLmK28Q9bLbpH6lx37yjYxfCFtr090aCAi8AqjlKbv03E1VjUc8YJPJrSV2ADXF+n0XbhG5KVLpVhbmmsvo/PkQffzduyv4CHQOBTRog39iYDUnHmzRYbKVC2Od03XiKNhfspT6X0hWiZr7Znovizixoa68w4SWvSloyPnlCZOwOmuexiPoQ0itu7jK+6bwt91OyykgIug+Sn3EpbOf9J/M7XVAVePFTxStrwuMZj+xLilOD1AohuFlIEgdktBM74xnu3fIPCFTKxi+v5nW/h3zdyN21cKVrMAVupnLGuzerlYUk8ianYxvxFWCEh1gnAr62U/GDdfIU+Rm6r5GcyOmerf+x80f9YgUpousVtWgdDgV9+Ffy7rAbS/p3Z81jD38Sf82odMjeJwnn4tpNpWTB6RZH8k1f1AB88UWdBJB5K6Mq33ROIhUpKPDMNuCqM0AwHeUaHSRwQQ2n22o0/PD4XM2UHiMoy4JFY44Ox3oNpDcYDI2Ockw7v9mg0eG3HwM1ylX7YthbFiQIQjBVgj1Blefz3vIc75sagoILuY3nWl3DSXwaLnA2sEwGbSpJcRvUdXkpz7CDZY++gABrJyaPbUj80p+QXzKwwQ/F8PWFIEYJVY=
+  on:
+    tags: true
+    repo: grit96/markdown-templator
