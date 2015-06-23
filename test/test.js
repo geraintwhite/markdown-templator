@@ -63,4 +63,8 @@ test('Templator processFile', function (t) {
     process('relative.html', {}, st);
   });
 
+  t.test('process file with HTML content', function (st) {
+    process('with-html.html', 'test/fixtures/includes', st);
+  });
+
 });
