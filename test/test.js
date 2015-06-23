@@ -1,9 +1,22 @@
 var test = require('tape'),
+    fs = require('fs'),
     path = require('path'),
     Templator = require('../');
 
 
-test('templator.path', function (t) {
+function process (filename, options, st) {
+  var templator = new Templator(options),
+      input = 'test/fixtures/' + filename,
+      output = 'test/expected/' + filename;
+
+
+  st.equal(templator.processFile(input), fs.readFileSync(output).toString(),
+           'processed content should match expected');
+  st.end();
+}
+
+
+test('Templator options', function (t) {
 
   t.test('templator.cwd is set to default', function (st) {
     var templator = new Templator();
@@ -26,4 +39,26 @@ test('templator.path', function (t) {
 });
 
 
+test('Templator processFile', function (t) {
 
+  t.test('process file with no includes', function (st) {
+    process('no-includes.html', {}, st);
+  });
+
+  t.test('process file with no path resolutions', function (st) {
+    process('no-resolve.html', {}, st);
+  });
+
+  t.test('process file with includes', function (st) {
+    process('includes.html', 'test/fixtures/includes', st);
+  });
+
+  t.test('process file with includes without .md', function (st) {
+    process('no-md.html', 'test/fixtures/includes', st);
+  });
+
+  t.test('process file with relative includes', function (st) {
+    process('relative.html', {}, st);
+  });
+
+});
