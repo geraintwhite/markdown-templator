@@ -9,10 +9,12 @@ function process (filename, options, st) {
       input = 'test/fixtures/' + filename,
       output = 'test/expected/' + filename;
 
+  var actual = templator.processFile(input);
 
-  st.equal(templator.processFile(input), fs.readFileSync(output).toString(),
-           'processed content should match expected');
-  st.end();
+  fs.readFile(output, function (err, data) {
+    st.equal(actual, data.toString(), 'processed content should match expected');
+    st.end();
+  });
 }
 
 
