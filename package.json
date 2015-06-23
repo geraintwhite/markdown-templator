@@ -7,7 +7,7 @@
     "markdown-templator": "./bin/markdown-templator"
   },
   "scripts": {
-    "test": "tape test/test.js | tap-spec"
+    "test": "node ./test/test.js | tap-spec"
   },
   "repository": {
     "type": "git",
