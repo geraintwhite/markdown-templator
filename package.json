@@ -7,7 +7,7 @@
     "markdown-templator": "./bin/markdown-templator"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape test/test.js | tap-spec"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,9 @@
     "marked": "^0.3.3",
     "minimist": "^1.1.1",
     "ul": "^5.0.0"
+  },
+  "devDependencies": {
+    "tap-spec": "^4.0.0",
+    "tape": "^4.0.0"
   }
 }
