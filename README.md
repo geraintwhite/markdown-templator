@@ -8,7 +8,7 @@ Include markdown files in an HTML template. [gulp-md-template](https://github.co
 
 ## Installation
 ```sh
-$ npm install markdown-templator
+$ npm install -g markdown-templator
 ```
 
 
