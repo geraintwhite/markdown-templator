@@ -1,20 +1,17 @@
 language: node_js
-
 node_js:
-  - 10
-  - 8
-  - 6
-  - 4
-
+- 10
+- 8
+- 6
+- 4
 script:
-  - npm install
-  - npm test
-
+- npm install
+- npm test
 deploy:
   provider: npm
   email: mail@geraintwhite.co.uk
   api_key:
-    secure: yOtbbbROCysUPVTTBr5fu/r7oZAWcFO3kwDf/4OYRyHN6SZImVJpWW3pqpgMFweTplXq5L2F2oMwSlIZmCd1VFnLAGdXixgFg1H3j1UE+IoY3BCMWQp20Xg2xTY96bn9uD5RelxSQ6pSQu6mylTn0szmm0oWDMQoxYBC84cRH1cUtGsiHJXp+va+HwWNLJXay0gyNdbnmvpcsF/txrROo7pXxdZnw/7vkH2gUgNj5OzESOrjW8rYrdEQRCYWoB/YqEc6RUZNPC7F6gR+EMKAvrkq4fIb376sR6fnUWpF9mv1wBY9CtoCfuy+hwgYUgnKBAPqdA8VKkh6vVMFHRsuVTIXnJV7ApBbog9re3yiV8STjOCADwDbpTIhd7jHVrqntKhcUPuiXJZzuJhZru+V2/omcvo4RsajXVDw+ZnN5TJvGFRQ0ukljLC7gEItaUeQ3DCFVYMmnUUD0SEXyEJoXcYKE+YayAo/oiDqIrbRNk/PUM5TRANaSeGh61xuyXO7JWgonj/ZOkKHwxfF61/TFEY0vRHiZiwxHoG36pryaNXAWS7JFxpFMrVP333kHw1ZHp7e9PbcijpWYMl1wjUAHg4wSEsEW4o8vZbC67G6crZC+ydCIeX0JUCSHBNesFYjrTeMW/9y9hS0hv7nzu44oAUCWuyVFlotpjPwHWJWczc=
+    secure: 4Qfcdr+1QVkDQrJdwhQXr/Z6Vv4zJTlF1zDgjLa0eQ8hAuFEJt4dkro8/q7DsVb/osIQMfYmidGhEaiDK+vhG0HZ3WczAy2awEtkjAsdPYKV3T4M0wDdmwJithpEAn7p/Ga97G7vJfVpO15hYVzSr87aaf1TCiIUAIS0sM7VgaMwtupHkNvSNsCooY63iwwMT3JvrccGspoyShh3aet7Wn3uQf4sIbAgxY0nzaocxQSRA32Rc/jxfnD3NPpVckRI7iMJcYK+2cG+elFNIuX3zRT0DHKbdaJlfF2qJYqscObYEwcvtG23WC4xXQc+wRUI7iDKKHEpn78EIzp5sN8sHQJ2FUdZBM2sYmsLIZmQXFlfWeEoUqMRy92lVdcNA/rSI75bxyBtGLKL8YQ7lkvhl+5xS6z509RJqB6mz/PzUXqn+CtOkhYpS0rmOUCpp49aLYcj5OwxgyE+4rt36CHzA+XnFXtjmFcywOHZQ6spAolmuKNr5pxcvhiCD7v9a17SJ9IfTJvbweFRmn0VHv2QstiLzQQS1yAS0rX+ddseuJYFrJ65UOklFFnCWIRbxmqlf3Zf1N+OIHTbxOy/5HGCFZXwrmt0bIzwv26jhe68licSKA8R3/0ZlT+RAkkdC53gVxnRMp1tpMbdcwR0lpSL1uiAA5DymErzSQEYMaiaA8M=
   on:
     tags: true
     repo: grit96/markdown-templator
