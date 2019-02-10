@@ -20,6 +20,8 @@ function process (filename, options, st) {
 
 test('Templator options', function (t) {
 
+  t.plan(3);
+
   t.test('templator.cwd is set to default', function (st) {
     var templator = new Templator();
     st.equal(templator.cwd, path.resolve('./'), 'should have correct path property');
@@ -42,6 +44,8 @@ test('Templator options', function (t) {
 
 
 test('Templator processFile', function (t) {
+
+  t.plan(7);
 
   t.test('process file with no includes', function (st) {
     process('no-includes.html', {}, st);
