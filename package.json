@@ -1,6 +1,6 @@
 {
   "name": "markdown-templator",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Include markdown files in an HTML template",
   "main": "index.js",
   "bin": {
