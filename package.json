@@ -22,7 +22,7 @@
   "dependencies": {
     "marked": "^1.1.1",
     "minimist": "^1.2.5",
-    "ul": "^5.2.0"
+    "ul": "^5.2.15"
   },
   "devDependencies": {
     "tap-spec": "^5.0.0",
