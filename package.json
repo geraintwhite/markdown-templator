@@ -21,7 +21,7 @@
   "homepage": "https://github.com/grit96/markdown-templator#readme",
   "dependencies": {
     "marked": "^2.1.1",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.7",
     "ul": "^5.2.15"
   },
   "devDependencies": {
