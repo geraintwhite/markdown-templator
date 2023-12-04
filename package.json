@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:grit96/markdown-templator.git"
+    "url": "git@github.com:geraintwhite/markdown-templator.git"
   },
   "author": "Geraint White <geraintwhite@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/grit96/markdown-templator/issues"
+    "url": "https://github.com/geraintwhite/markdown-templator/issues"
   },
-  "homepage": "https://github.com/grit96/markdown-templator#readme",
+  "homepage": "https://github.com/geraintwhite/markdown-templator#readme",
   "dependencies": {
     "marked": "^2.1.3",
     "minimist": "^1.2.8",
