@@ -1,10 +1,9 @@
 # markdown-templator
 
 [![NPM Version](https://img.shields.io/npm/v/markdown-templator.svg)](https://www.npmjs.com/package/markdown-templator)
-[![Build Status](https://img.shields.io/travis/grit96/markdown-templator.svg)](https://travis-ci.org/grit96/markdown-templator)
-[![Dependency Status](https://img.shields.io/david/grit96/markdown-templator.svg)](https://david-dm.org/grit96/markdown-templator)
+[![Build Status](https://img.shields.io/travis/geraintwhite/markdown-templator.svg)](https://travis-ci.org/geraintwhite/markdown-templator)
 
-Include markdown files in an HTML template. [gulp-md-template](https://github.com/grit96/gulp-md-template) is a Gulp plugin for this with example usage.
+Include markdown files in an HTML template. [gulp-md-template](https://github.com/geraintwhite/gulp-md-template) is a Gulp plugin for this with example usage.
 
 ## Installation
 ```sh
